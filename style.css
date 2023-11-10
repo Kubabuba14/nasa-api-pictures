@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ body {
   margin: 0;
   background: whitesmoke;
   overflow-x: hidden;
-  font-family: Verdana, sans-serif;
+  font-family: Arimo, sans-serif;
   font-size: 1rem;
   line-height: 1.8rem;
 }
@@ -65,7 +67,7 @@ body {
 
 /* Images Container */
 .images-container {
-
+  width: 800px;
   margin-top: 50px;
 }
 
@@ -90,9 +92,14 @@ body {
 .card-title {
   margin: 10px auto;
   font-size: 24px;
+  letter-spacing: 2px;
 }
 
-
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
 
 /* Save Confirmation */
 .save-confirmed {
@@ -104,6 +111,7 @@ body {
   position: fixed;
   bottom: 25px;
   right: 50px;
+  letter-spacing: 2px;
 }
 
 /* Hidden */
@@ -116,13 +124,18 @@ body {
   body {
     line-height: 1.4rem;
     font-size: 0.9rem;
-
+    text-align: justify;
   }
 
+  .images-container {
+    width: 100%;
+  }
 
   .card-title {
     font-size: 20px;
   }
 
-  
+  .save-confirmed {
+    right: 25px;
+  }
 }
